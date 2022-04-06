@@ -6,14 +6,14 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { TOKEN, PREFIX } = require("./util/Util");
 const i18n = require("./util/i18n");
-const keepAlive = require('./server');
+
 
 const client = new Client({
   disableMentions: "everyone",
   restTimeOffset: 0
 });
 
-keepAlive();
+
 
 
 client.login(TOKEN);
